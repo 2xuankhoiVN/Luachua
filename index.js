@@ -36,11 +36,11 @@ async function startBot() {
 
     // Event listener for when the bot spawns in the world
     bot.on('spawn', async () => {
+        bot.setMaxListeners(20); // Tăng số lượng lắng nghe tối đa lên 20 cho sự kiện 'windowOpen'
         bot.chat('/login 1234567'); // Send login command
         await sleep(1000); // Wait for 4 seconds to ensure login is processed
         console.log('Đã nhập mk'); // Log to console
         activateItemContinuously(); // Start the continuous activation loop
-        bot.on('windowOpen', onWindowOpen); // Set up listener for window opening
     });
 
     // Function to handle window open event
