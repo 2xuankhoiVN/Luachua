@@ -21,7 +21,7 @@ async function startBot() {
     function onWindowOpen(window) {
         console.log('Đã vào sever'); // Log to console
         bot.clickWindow(11, 0, 0); // Click on slot 11 in the window
-        sleep(100)
+        sleep(500)
         bot.clickWindow(11, 0, 0); // Click on slot 11 in the window
     }
     
@@ -30,7 +30,7 @@ async function startBot() {
             bot.setQuickBarSlot(0);
             bot.activateItem();
             bot.on('windowOpen', onWindowOpen);
-            await sleep(500); // Wait for 3 seconds
+            await sleep(1500); // Wait for 3 seconds
         }
     }
 
