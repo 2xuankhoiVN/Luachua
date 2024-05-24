@@ -15,7 +15,7 @@ async function startBot() {
     return new Promise((resolve, reject) => {
         bot = mineflayer.createBot({
             host: 'vinamc.net',
-            username: 'TrumDaDen',
+            username: '2xuankhoi',
             auth: 'offline',
             port: 25565,
             version: "1.20.4",
@@ -46,7 +46,7 @@ async function startBot() {
             }
             console.log(`Trạng thái spawn sau khi cập nhật: ${spawnState}`);
             bot.setMaxListeners(20); // Giảm giới hạn listeners cho sự kiện 'windowOpen'
-            bot.chat('/login 1234567'); // Gửi lệnh đăng nhập
+            bot.chat('/login thegold780'); // Gửi lệnh đăng nhập
             await sleep(4000); // Chờ 4 giây để đảm bảo đăng nhập được xử lý
             console.log('Đã nhập mật khẩu');
 
